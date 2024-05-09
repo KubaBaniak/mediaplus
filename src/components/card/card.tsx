@@ -4,7 +4,7 @@ interface ICardText {
   text: string;
 }
 
-export default function Carusel({ cardText }: { cardText: ICardText }) {
+export default function Card({ cardText }: { cardText: ICardText }) {
   return (
     <div>
       <h4>{cardText.title}</h4>
