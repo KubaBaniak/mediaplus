@@ -4,7 +4,6 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function Carousel() {
   return (
     <div className="carousel">
-      <img />
       <div className="carousel__arrow--left">
         <IoIosArrowBack />
       </div>

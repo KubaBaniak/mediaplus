@@ -2,8 +2,10 @@
 
 .card {
   transform: translate(0, -50%);
-  width: 280px;
-  height: 200px;
+  max-width: 280px;
+  max-height: 200px;
+  min-width: 100px;
+  min-height: 140px;
   background-color: $blue;
   border-radius: 5px;
 

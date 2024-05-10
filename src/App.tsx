@@ -10,15 +10,35 @@ function App() {
       <Header />
       <Navbar />
       <Carousel />
-      <Card
-        card={{
-          title: "Jakub Urbaniak",
-          secondaryTitle: "Fullstack",
-          text: "Lorem Ipsum is simply dummy text.",
-          img_url:
-            "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
-        }}
-      />
+      <div className="card-section">
+        <Card
+          card={{
+            title: "Jakub Urbaniak",
+            secondaryTitle: "Fullstack",
+            text: "Lorem Ipsum is simply dummy text.",
+            img_url:
+              "https://www.freeiconspng.com/thumbs/website-icon/website-icon-8.png",
+          }}
+        />
+        <Card
+          card={{
+            title: "Jakub Urbaniak",
+            secondaryTitle: "Fullstack",
+            text: "Lorem Ipsum is simply dummy text.",
+            img_url:
+              "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
+          }}
+        />
+        <Card
+          card={{
+            title: "Jakub Urbaniak",
+            secondaryTitle: "Fullstack",
+            text: "Lorem Ipsum is simply dummy text.",
+            img_url:
+              "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
+          }}
+        />
+      </div>
     </main>
   );
 }

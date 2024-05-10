@@ -6,6 +6,7 @@
   background-color: $gray;
   display: flex;
   flex-direction: column;
+  background: url(https://wallpapers.com/images/hd/doctor-background-8qcbs916ktapn0ps.jpg) no-repeat center center fixed;
 
 
   .carousel__main {
@@ -23,8 +24,13 @@
       margin: 0;
 
       .key__word {
+        font-weight: 600;
         color: $blue;
       }
+    }
+
+    span {
+      font-weight: 300;
     }
 
     .carousel__buttons {
