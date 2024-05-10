@@ -1,3 +1,5 @@
+@import '../../globals.scss';
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -5,12 +7,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px 0 20px 0;
   font-size: 15px;
 
   img {
     border-radius: 5px;
-    width: 150px;
+    width: 130px;
     height: auto;
   }
 
@@ -18,14 +19,19 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
 
     div {
       display: flex;
-      gap: 2px;
       cursor: pointer;
+      padding: 25px 10px 25px 10px;
+      align-items: center;
     }
+
+    .active {
+      border-bottom: 2px solid $blue ;
+      color: $blue;
+    }
+
 
     svg {
       margin-top: 2px;
