@@ -3,6 +3,7 @@ import Carousel from "./components/carousel/carousel";
 import Header from "./components/header/header";
 import Navbar from "./components/navbar/navbar";
 import "./App.scss";
+import SidebarButton from "./components/sidebarButton/sidebarButton";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           }}
         />
       </div>
+      <SidebarButton />
     </main>
   );
 }
