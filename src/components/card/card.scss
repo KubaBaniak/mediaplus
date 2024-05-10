@@ -2,8 +2,8 @@
 
 .card {
   transform: translate(0, -50%);
-  max-width: 280px;
-  max-height: 200px;
+  width: 280px;
+  height: 200px;
   min-width: 100px;
   min-height: 140px;
   background-color: $blue;
@@ -45,11 +45,11 @@
   }
 
   .icon {
-    width: 50%;
+    width: 30%;
     height: auto;
     position: absolute;
-    top: 55%;
-    left: 65%;
+    top: 70%;
+    left: 75%;
     opacity: 0.3;
   }
 }
