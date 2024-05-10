@@ -1,4 +1,5 @@
 import "./navbar.scss";
+import "../../reusables/buttons.scss"
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
         </div>
         <div>Contact Us</div>
       </div>
-      <button>Book Appointment</button>
+      <button className="button--blue">Book Appointment</button>
     </nav>
   );
 }
