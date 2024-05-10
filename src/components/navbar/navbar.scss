@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  font-size: 15px;
+
+  img {
+    border-radius: 5px;
+    width: auto;
+    height: 75px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    div {
+      display: flex;
+      gap: 2px;
+      cursor: pointer;
+    }
+
+    svg {
+      margin-top: 2px;
+    }
+  }
+}
