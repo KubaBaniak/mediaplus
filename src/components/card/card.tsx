@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 import "./card.scss";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -5,7 +6,7 @@ interface ICard {
   title: string;
   secondaryTitle: string;
   text: string;
-  img_url: string;
+  icon: IconType;
 }
 
 export default function Card({ card }: { card: ICard }) {
@@ -18,7 +19,7 @@ export default function Card({ card }: { card: ICard }) {
         Learn more
         <FaLongArrowAltRight />
       </button>
-      <img src={card.img_url} />
+      <card.icon className="icon" />
     </div>
   );
 }

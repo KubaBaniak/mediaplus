@@ -1,14 +1,12 @@
 import "./navbar.scss";
-import "../../reusables/buttons.scss"
+import "../../reusables/buttons.scss";
 import { IoIosArrowDown } from "react-icons/io";
+import logo from "../../assets/img/logo.png";
 
 export default function Navbar() {
   return (
     <nav className="navigation">
-      <img
-        src="https://cdn.7tv.app/emote/613937fcf7977b64f644c0d2/4x.webp"
-        alt=""
-      />
+      <img src={logo} alt="" />
       <div className="nav-menu">
         <div>
           Home

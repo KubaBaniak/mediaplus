@@ -7,7 +7,6 @@
   margin: 0 10% 0 10%;
   width: 80%;
   align-items: center;
-  font-family: Roboto;
 
   .card-section {
     display: flex;
@@ -21,6 +20,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: $black;
+  font-family: Roboto;
 }
 
 #root {

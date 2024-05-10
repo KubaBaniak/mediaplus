@@ -4,6 +4,7 @@ import Header from "./components/header/header";
 import Navbar from "./components/navbar/navbar";
 import "./App.scss";
 import SidebarButton from "./components/sidebarButton/sidebarButton";
+import { FaHospitalAlt, FaClipboardList, FaRegClock } from "react-icons/fa";
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
             title: "Jakub Urbaniak",
             secondaryTitle: "Fullstack",
             text: "Lorem Ipsum is simply dummy text.",
-            img_url:
-              "https://www.freeiconspng.com/thumbs/website-icon/website-icon-8.png",
+            icon: FaHospitalAlt,
           }}
         />
         <Card
@@ -26,8 +26,7 @@ function App() {
             title: "Jakub Urbaniak",
             secondaryTitle: "Fullstack",
             text: "Lorem Ipsum is simply dummy text.",
-            img_url:
-              "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
+            icon: FaClipboardList,
           }}
         />
         <Card
@@ -35,8 +34,7 @@ function App() {
             title: "Jakub Urbaniak",
             secondaryTitle: "Fullstack",
             text: "Lorem Ipsum is simply dummy text.",
-            img_url:
-              "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
+            icon: FaRegClock,
           }}
         />
       </div>
