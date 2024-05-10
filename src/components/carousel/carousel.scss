@@ -1,0 +1,66 @@
+@import '../../globals.scss';
+
+.carousel {
+  height: 500px;
+  width: 100vw;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+
+
+  .carousel__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 10% 0 10%;
+    gap: 30px;
+    width: 50%;
+
+    h2 {
+      font-weight: 600;
+      font-size: 36px;
+      margin: 0;
+
+      .key__word {
+        color: $blue;
+      }
+    }
+
+    .carousel__buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}
+
+@mixin carousel__arrow {
+  color: white;
+  background-color: $blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+  }
+}
+
+.carousel__arrow--left {
+  @include carousel__arrow;
+  left: 15px;
+}
+
+.carousel__arrow--right {
+  @include carousel__arrow;
+  right: 15px;
+}
