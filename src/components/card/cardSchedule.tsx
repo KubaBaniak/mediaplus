@@ -26,7 +26,7 @@ export default function ScheduleCard({
       <h3>{scheduleCardData.title}</h3>
       <ul className="schedule-card--list">
         {scheduleCardData.text.map((day) => (
-          <li className="schedule-card--schedule">
+          <li key={day.days} className="schedule-card--schedule">
             {day.days}
             <span className="schedule-card--days">{day.time}</span>
           </li>

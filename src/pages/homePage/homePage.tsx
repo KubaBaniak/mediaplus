@@ -29,8 +29,8 @@ export default function HomePageContent() {
         />
         <ScheduleCard
           scheduleCardData={{
-            title: "Jakub Urbaniak",
-            secondaryTitle: "Fullstack",
+            title: "Fullstack",
+            secondaryTitle: "Jakub Urbaniak",
             text: [
               { days: "Monday - Friday", time: "8:00-20:00" },
               { days: "Saturnday", time: "9:00-18:30" },
