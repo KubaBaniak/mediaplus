@@ -10,7 +10,15 @@ function App() {
       <Header />
       <Navbar />
       <Carousel />
-      <Card cardText={{ title: "bla", secondaryTitle: "dsfg", text: "asdg" }} />
+      <Card
+        card={{
+          title: "Jakub Urbaniak",
+          secondaryTitle: "Fullstack",
+          text: "Lorem Ipsum is simply dummy text.",
+          img_url:
+            "https://static.vecteezy.com/system/resources/thumbnails/019/879/196/small_2x/passage-of-time-icon-on-transparent-background-free-png.png",
+        }}
+      />
     </main>
   );
 }
