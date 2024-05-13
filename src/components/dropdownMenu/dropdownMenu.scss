@@ -25,3 +25,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .dropbox-menu {
+    position: static;
+    background-color: $white;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+
+    .dropbox-list {
+      .dropbox-item {
+        border-bottom: none;
+      }
+    }
+  }
+}

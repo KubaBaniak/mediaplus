@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  //background: url(../../assets/img/slider.jpg) no-repeat center center fixed;
+  background: url(../../assets/img/slider.jpg) no-repeat center center fixed;
 
 
   .carousel__main {
@@ -49,8 +49,7 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  position: absolute;
-  transform: translate(0, -50%);
+  position: relative;
   top: 50%;
   cursor: pointer;
 
@@ -66,10 +65,11 @@
 
 .carousel__arrow--left {
   @include carousel__arrow;
-  left: 15px;
+  left: 2%;
 }
 
 .carousel__arrow--right {
   @include carousel__arrow;
-  right: 15px;
+  transform: translate(-100%, -100%);
+  left: 98%;
 }

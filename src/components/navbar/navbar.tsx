@@ -4,18 +4,25 @@ import { IoIosArrowDown } from "react-icons/io";
 import logo from "../../assets/img/logo.png";
 import { useState } from "react";
 import DropdownMenu from "../dropdownMenu/dropdownMenu";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
+  const [isMenuVisable, setIsMenuVisable] = useState(false);
 
   const handleNavMenuClick = (itemName: string) => {
     setActiveItem(itemName);
   };
 
+  console.log(isMenuVisable);
   return (
     <nav className="navigation">
       <img src={logo} alt="" />
-      <div className="nav-menu">
+      <div
+        className={`nav-menu ${
+          isMenuVisable ? "nav-menu--active" : "nav-menu--inactive"
+        }`}
+      >
         <div
           onClick={() => handleNavMenuClick("Home")}
           className={`nav-item ${activeItem === "Home" ? "active" : ""}`}
@@ -75,6 +82,12 @@ export default function Navbar() {
         </div>
       </div>
       <button className="button--blue">Book Appointment</button>
+      <span
+        className="mobile-menu-toggle"
+        onClick={() => setIsMenuVisable((prev) => !prev)}
+      >
+        <GiHamburgerMenu />
+      </span>
     </nav>
   );
 }

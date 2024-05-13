@@ -53,3 +53,10 @@
     opacity: 0.3;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .card {
+    transform: translate(0, -30%);
+    width: 80%;
+  }
+}
