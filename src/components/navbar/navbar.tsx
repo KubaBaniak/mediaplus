@@ -3,6 +3,7 @@ import "../../reusables/buttons.scss";
 import { IoIosArrowDown } from "react-icons/io";
 import logo from "../../assets/img/logo.png";
 import { useState } from "react";
+import DropdownMenu from "../dropdownMenu/dropdownMenu";
 
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
@@ -17,40 +18,58 @@ export default function Navbar() {
       <div className="nav-menu">
         <div
           onClick={() => handleNavMenuClick("Home")}
-          className={activeItem === "Home" ? "active" : ""}
+          className={`nav-item ${activeItem === "Home" ? "active" : ""}`}
         >
           Home
           <IoIosArrowDown />
         </div>
         <div
           onClick={() => handleNavMenuClick("Doctors")}
-          className={activeItem === "Doctors" ? "active" : ""}
+          className={`nav-item ${activeItem === "Doctors" ? "active" : ""}`}
         >
           Doctors
         </div>
         <div
           onClick={() => handleNavMenuClick("Services")}
-          className={activeItem === "Services" ? "active" : ""}
+          className={`nav-item ${activeItem === "Services" ? "active" : ""}`}
         >
           Services
         </div>
-        <div
-          onClick={() => handleNavMenuClick("Pages")}
-          className={activeItem === "Pages" ? "active" : ""}
-        >
-          Pages
-          <IoIosArrowDown />
+
+        <div className="nav-dropbox">
+          <div
+            onClick={() => handleNavMenuClick("Pages")}
+            className={`nav-item ${activeItem === "Pages" ? "active" : ""}`}
+          >
+            Pages
+            <IoIosArrowDown />
+          </div>
+          {activeItem === "Pages" && (
+            <DropdownMenu
+              menuItems={[
+                { url: "test", name: "strig" },
+                { url: "test2", name: "number" },
+              ]}
+            />
+          )}
         </div>
-        <div
-          onClick={() => handleNavMenuClick("Blogs")}
-          className={activeItem === "Blogs" ? "active" : ""}
-        >
-          Blogs
-          <IoIosArrowDown />
+
+        <div className="nav-dropbox">
+          <div
+            onClick={() => handleNavMenuClick("Blogs")}
+            className={`nav-item ${activeItem === "Blogs" ? "active" : ""}`}
+          >
+            Blogs
+            <IoIosArrowDown />
+          </div>
+          {activeItem === "Blogs" && (
+            <DropdownMenu menuItems={[{ url: "test", name: "blog" }]} />
+          )}
         </div>
+
         <div
           onClick={() => handleNavMenuClick("Contact Us")}
-          className={activeItem === "Contact Us" ? "active" : ""}
+          className={`nav-item ${activeItem === "Contact Us" ? "active" : ""}`}
         >
           Contact Us
         </div>
